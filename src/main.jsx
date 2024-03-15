@@ -6,6 +6,7 @@ import App from "./App";
 import { store } from "./store";
 
 import { Provider } from "react-redux";
+import ItemsContiner from "./components/ItemsContiner";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -14,6 +15,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <App />
+      <ItemsContiner />
     </Provider>
   </React.StrictMode>
 );
